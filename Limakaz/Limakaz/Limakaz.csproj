@@ -12,7 +12,6 @@
     <Content Include="wwwroot\client\assets\node_modules\binary-extensions\binary-extensions.json" />
     <Content Include="wwwroot\client\assets\node_modules\binary-extensions\package.json" />
     <Content Include="wwwroot\client\assets\node_modules\braces\package.json" />
-    <Content Include="wwwroot\client\assets\node_modules\chokidar\package.json" />
     <Content Include="wwwroot\client\assets\node_modules\fill-range\package.json" />
     <Content Include="wwwroot\client\assets\node_modules\glob-parent\package.json" />
     <Content Include="wwwroot\client\assets\node_modules\immutable\package.json" />
@@ -44,7 +43,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\Admin\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
@@ -68,12 +66,6 @@
     <None Include="wwwroot\client\assets\node_modules\braces\lib\utils.js" />
     <None Include="wwwroot\client\assets\node_modules\braces\LICENSE" />
     <None Include="wwwroot\client\assets\node_modules\braces\README.md" />
-    <None Include="wwwroot\client\assets\node_modules\chokidar\index.js" />
-    <None Include="wwwroot\client\assets\node_modules\chokidar\lib\constants.js" />
-    <None Include="wwwroot\client\assets\node_modules\chokidar\lib\fsevents-handler.js" />
-    <None Include="wwwroot\client\assets\node_modules\chokidar\lib\nodefs-handler.js" />
-    <None Include="wwwroot\client\assets\node_modules\chokidar\LICENSE" />
-    <None Include="wwwroot\client\assets\node_modules\chokidar\README.md" />
     <None Include="wwwroot\client\assets\node_modules\fill-range\index.js" />
     <None Include="wwwroot\client\assets\node_modules\fill-range\LICENSE" />
     <None Include="wwwroot\client\assets\node_modules\fill-range\README.md" />
@@ -145,7 +137,6 @@
     <TypeScriptCompile Include="wwwroot\client\assets\node_modules\anymatch\index.d.ts" />
     <TypeScriptCompile Include="wwwroot\client\assets\node_modules\binary-extensions\binary-extensions.json.d.ts" />
     <TypeScriptCompile Include="wwwroot\client\assets\node_modules\binary-extensions\index.d.ts" />
-    <TypeScriptCompile Include="wwwroot\client\assets\node_modules\chokidar\types\index.d.ts" />
     <TypeScriptCompile Include="wwwroot\client\assets\node_modules\immutable\dist\immutable.d.ts" />
     <TypeScriptCompile Include="wwwroot\client\assets\node_modules\is-binary-path\index.d.ts" />
     <TypeScriptCompile Include="wwwroot\client\assets\node_modules\readdirp\index.d.ts" />
