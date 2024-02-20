@@ -12,10 +12,13 @@ namespace Limakaz.ViewModels.Officies
         [Required(ErrorMessage = "Yerləşdiyi yeri əlavə edin.")]
         public string Location { get; set; }
 
+        [Required(ErrorMessage = "Çalışma günlərini qeyd edin.")]
+        public string WorkingDays { get; set; }
+
         [Required(ErrorMessage = "Açılış saatını əlavə edin.")]
-        public DateTime OpeningTime { get; set; }
+        public string OpeningTime { get; set; }
 
         [Required(ErrorMessage = "Bağlanış saatını əlavə edin.")]
-        public DateTime ClosetingTime { get; set; }
+        public string ClosetingTime { get; set; }
     }
 }

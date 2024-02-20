@@ -7,8 +7,9 @@ namespace Limakaz.Database.DomainModels
 
         public string Name { get; set; }
         public string Location { get; set; }
-        public DateTime OpeningTime { get; set; }
-        public DateTime ClosetingTime { get;  set; }
+        public string WorkingDays { get; set; }
+        public string OpeningTime { get; set; }
+        public string ClosetingTime { get;  set; }
 
 
     }

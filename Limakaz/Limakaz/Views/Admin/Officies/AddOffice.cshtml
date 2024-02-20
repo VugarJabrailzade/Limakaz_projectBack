@@ -1,48 +1,37 @@
-﻿@{
+﻿@using Limakaz.ViewModels.Officies
+@model OfficiesResponseViewModel
+@{
     Layout = "_AdminLayout";
 }
 
-<form class="row g-3">
+<form method="post" class="row g-3">
+    <a asp-route="add-office"></a>
     <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" type="text" class="form-control" id="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+
     </div>
     <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-        </select>
-    </div>
-    <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
+        <label asp-for="Location" class="form-label">Location</label>
+        <input asp-for="Location" type="text" class="form-control" id="Location">
+        <span asp-validation-for="Location" class="text-danger"></span>
+
     </div>
     <div class="col-12">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-                Check me out
-            </label>
-        </div>
+        <label asp-for="WorkingDays" class="form-label">Working Days</label>
+        <input asp-for="WorkingDays" type="text" class="form-control" id="inputAddress">
+        <span asp-validation-for="WorkingDays" class="text-danger"></span>
     </div>
     <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <label asp-for="OpeningTime" class="form-label">Opening Time</label>
+        <input asp-for="OpeningTime" type="text" class="form-control" id="inputAddress">
+    </div>
+    <div class="col-12">
+        <label asp-for="ClosetingTime" class="form-label">Closing Time</label>
+        <input asp-for="ClosetingTime" type="text" class="form-control" id="inputAddress2">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Yadda Saxla</button>
     </div>
 </form>
