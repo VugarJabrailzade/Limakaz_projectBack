@@ -1,0 +1,56 @@
+﻿@using Limakaz.Database.DomainModels
+@model List<Contact>
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="col-sm-12">
+    <div class="page-title-box">
+        <div class="float-end">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Metrica</a>
+                </li><!--end nav-item-->
+                <li class="breadcrumb-item">
+                    <a href="#">Pages</a>
+                </li><!--end nav-item-->
+                <li class="breadcrumb-item active">Əlaqə detalları</li>
+            </ol>
+        </div>
+        <h4 class="page-title">Əlaqə detalları</h4>
+    </div><!--end page-title-box-->
+</div><!--end col-->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <a asp-route="add-contact" class="btn btn-success">Yeni contact əlavə et</a>
+            </div><!--end card-header-->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped mb-0">
+                        <thead>
+                            <tr>
+                                <th>Mobil nömrə</th>
+                                <th>E-mail</th>
+                                <th class="text-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var contact in Model)
+                            {
+                                <tr>
+                                    <td>@contact.PhoneNumber</td>
+                                    <td>@contact.Email</td>
+                                    <td class="text-end">
+                                        <a asp-route="contact-update" asp-route-id="@contact.Id"><i class="las la-pen text-secondary font-16"></i></a>
+                                    </td>   
+                                </tr>
+                            }
+                        </tbody>
+                    </table><!--end /table-->
+                </div><!--end /tableresponsive-->
+            </div><!--end card-body-->
+        </div><!--end card-->
+    </div> <!-- end col -->

@@ -18,6 +18,42 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/AbroadAddressTr/AddAddressTr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJyb2FkQWRkcmVzc1RyXEFkZEFkZHJlc3NUci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/AbroadAddressTr/Address.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJyb2FkQWRkcmVzc1RyXEFkZHJlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/AbroadAddressTr/UpdateAddressTr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJyb2FkQWRkcmVzc1RyXFVwZGF0ZUFkZHJlc3NUci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/AbroadAddressUs/AddAddressUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJyb2FkQWRkcmVzc1VzXEFkZEFkZHJlc3NVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/AbroadAddressUs/AddressUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJyb2FkQWRkcmVzc1VzXEFkZHJlc3NVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/AbroadAddressUs/UpdateAddressUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJyb2FkQWRkcmVzc1VzXFVwZGF0ZUFkZHJlc3NVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/Contact/AddContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFxBZGRDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/Contact/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/Contact/UpdateContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFxVcGRhdGVDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/vcebr/OneDrive/Desktop/Limakaz_projectBack/Limakaz/Limakaz/Views/Admin/Officies/AddOffice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT2ZmaWNpZXNcQWRkT2ZmaWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

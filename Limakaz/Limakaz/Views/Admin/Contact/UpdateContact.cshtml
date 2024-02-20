@@ -1,0 +1,24 @@
+﻿@using Limakaz.ViewModels.Contact
+@model ContactViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<form method="post" class="row g-3">
+    <a asp-route="contact-update-post" asp-route-id="@Model.Id"></a>
+    <div class="col-md-6">
+        <label asp-for="PhoneNumber" class="form-label">Mobile nömrə</label>
+        <input asp-for="PhoneNumber" type="text" class="form-control">
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Email" class="form-label">E-mail</label>
+        <input asp-for="Email" type="email" class="form-control">
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Yadda Saxla</button>
+    </div>
+</form>

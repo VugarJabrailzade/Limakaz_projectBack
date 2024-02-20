@@ -10,6 +10,8 @@ namespace Limakaz.Database
         { }
 
            public DbSet<Officies> Officies {  get; set; }
-        
+           public DbSet<AbroadAddressTr> AbdroadAddressTr { get; set; }
+           public DbSet<AbroadAddressUs> AbdroadAddressUs { get; set; }
+           public DbSet<Contact> Contacts { get; set; }
     }
 }

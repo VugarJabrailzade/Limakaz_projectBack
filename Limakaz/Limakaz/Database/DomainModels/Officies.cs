@@ -12,5 +12,7 @@ namespace Limakaz.Database.DomainModels
         public string ClosetingTime { get;  set; }
 
 
+
     }
+
 }

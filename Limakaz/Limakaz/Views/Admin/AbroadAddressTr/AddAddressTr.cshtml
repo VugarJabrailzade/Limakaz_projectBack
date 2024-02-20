@@ -1,0 +1,68 @@
+﻿@using Limakaz.ViewModels.AbroadAddresses
+@model TrAddressResponseViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<form method="post" class="row g-3">
+    <a asp-route="add-abroad-address-post-tr"></a>
+    <div class="col-md-6">
+        <label asp-for="Country" class="form-label">Ölkə</label>
+        <input asp-for="Country" type="text" class="form-control" id="Name">
+        <span asp-validation-for="Country" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="City" class="form-label">Şəhər</label>
+        <input asp-for="City" type="text" class="form-control" id="Location">
+        <span asp-validation-for="City" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Region" class="form-label">Region</label>
+        <input asp-for="Region" type="text" class="form-control" id="Name">
+        <span asp-validation-for="Region" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Address" class="form-label">Adres</label>
+        <input asp-for="Address" type="text" class="form-control" id="Name">
+        <span asp-validation-for="Address" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="WorkingDays" class="form-label">İş günləri</label>
+        <input asp-for="WorkingDays" type="text" class="form-control" id="Location">
+        <span asp-validation-for="WorkingDays" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="WorkingHours" class="form-label">İş saatları</label>
+        <input asp-for="WorkingHours" type="text" class="form-control" id="Location">
+        <span asp-validation-for="WorkingHours" class="text-danger"></span>
+
+    </div>
+    <div class="col-12">
+        <label asp-for="PostalCode" class="form-label">Poct/ZİP kod</label>
+        <input asp-for="PostalCode" type="text" class="form-control" id="inputAddress">
+        <span asp-validation-for="PostalCode" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <label asp-for="PassportCode" class="form-label">Pasport kod</label>
+        <input asp-for="PassportCode" type="text" class="form-control" id="inputAddress">
+        <span asp-validation-for="PassportCode" class="text-danger"></span>
+
+    </div>
+    <div class="col-12">
+        <label asp-for="TaxNumber" class="form-label">Vergi nömrəsi</label>
+        <input asp-for="TaxNumber" type="text" class="form-control" id="inputAddress">
+
+    </div>
+    <div class="col-12">
+        <label asp-for="PhoneNumber" class="form-label">Mobil nömrə</label>
+        <input asp-for="PhoneNumber" type="text" class="form-control" id="inputAddress2">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Yadda Saxla</button>
+    </div>
+</form>

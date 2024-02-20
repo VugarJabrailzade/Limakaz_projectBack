@@ -1,0 +1,57 @@
+﻿@using Limakaz.ViewModels.AbroadAddresses
+@model UsAddressRequestViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<form method="post" class="row g-3">
+    <a asp-route="update-abroad-address-us-post" asp-route-id="@Model.Id"></a>
+    <div class="col-md-6">
+        <label asp-for="Country" class="form-label">Country</label>
+        <input asp-for="Country" type="text" class="form-control">
+        <span asp-validation-for="Country" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="City" class="form-label">City</label>
+        <input asp-for="City" type="text" class="form-control">
+        <span asp-validation-for="City" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="State" class="form-label">State</label>
+        <input asp-for="State" type="text" class="form-control">
+        <span asp-validation-for="State" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="AddressLine" class="form-label">AddressLine</label>
+        <input asp-for="AddressLine" type="text" class="form-control">
+        <span asp-validation-for="AddressLine" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="WorkingDays" class="form-label">Working Days</label>
+        <input asp-for="WorkingDays" type="text" class="form-control" id="Location">
+        <span asp-validation-for="WorkingDays" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="WorkingHours" class="form-label">Working Hours</label>
+        <input asp-for="WorkingHours" type="text" class="form-control" id="Location">
+        <span asp-validation-for="WorkingHours" class="text-danger"></span>
+
+    </div>
+    <div class="col-12">
+        <label asp-for="ZipCode" class="form-label">Postal/ZİP code</label>
+        <input asp-for="ZipCode" type="text" class="form-control" id="inputAddress">
+        <span asp-validation-for="ZipCode" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <label asp-for="PhoneNumber" class="form-label">Phone number</label>
+        <input asp-for="PhoneNumber" type="text" class="form-control" id="inputAddress2">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Yadda Saxla</button>
+    </div>
+</form>

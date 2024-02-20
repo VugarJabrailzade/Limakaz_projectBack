@@ -355,9 +355,9 @@ C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\ne
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Limakaz.props
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\scopedcss\bundle\Limakaz.styles.css
-C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\Limakaz.csproj.CopyComplete
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\Limakaz.dll
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\refint\Limakaz.dll
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\Limakaz.pdb
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\Limakaz.genruntimeconfig.cache
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\ref\Limakaz.dll
+C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\Limakaz.csproj.Up2Date
