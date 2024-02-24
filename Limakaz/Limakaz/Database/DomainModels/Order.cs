@@ -1,4 +1,5 @@
 ﻿using Limakaz.Database.Abstracts;
+using Limakaz.Database.DomainModelsı;
 
 namespace Limakaz.Database.DomainModels;
 
@@ -19,4 +20,6 @@ public class Order : IEntity
     public string? Seller { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
+    public int OrderStatusId { get; set; }
+    public OrderStatus? OrderStatus { get; set; }
 }

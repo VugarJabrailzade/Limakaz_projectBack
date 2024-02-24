@@ -188,6 +188,9 @@ namespace Limakaz.Migrations
                     b.Property<bool>("IsPaid")
                         .HasColumnType("boolean");
 
+                    b.Property<int>("OrderStatusId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("PrColor")
                         .IsRequired()
                         .HasColumnType("text");
@@ -233,7 +236,60 @@ namespace Limakaz.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OrderStatusId");
+
                     b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModelsı.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CountryPrefix")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Countries");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModelsı.OrderStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("StatusName")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OrderStatus");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.Order", b =>
+                {
+                    b.HasOne("Limakaz.Database.DomainModelsı.OrderStatus", "OrderStatus")
+                        .WithMany()
+                        .HasForeignKey("OrderStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrderStatus");
                 });
 #pragma warning restore 612, 618
         }
