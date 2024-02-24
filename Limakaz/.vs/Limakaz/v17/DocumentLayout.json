@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\views\\admin\\contact\\updatecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\views\\admin\\contact\\updatecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\contracts\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\contracts\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\notifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\notifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\abroadaddressus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\abroadaddressus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Contact.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Contact.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Contact.cs",
+              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Contact.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:43:00.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Notifications.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Notifications.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Notifications.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Notifications.cs",
+              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Notifications.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:42:59.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Contracts\\Country.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Contracts\\Country.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Contracts\\Country.cs",
+              "RelativeToolTip": "Limakaz\\Contracts\\Country.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:18:55.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbroadAddressUs.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
+              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:14:20.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateContact.cshtml",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Admin\\Contact\\UpdateContact.cshtml",
-              "RelativeDocumentMoniker": "Limakaz\\Views\\Admin\\Contact\\UpdateContact.cshtml",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Admin\\Contact\\UpdateContact.cshtml",
-              "RelativeToolTip": "Limakaz\\Views\\Admin\\Contact\\UpdateContact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-20T19:19:34.278Z",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Order.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Order.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Order.cs",
+              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Order.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T21:08:16.189Z",
               "EditorCaption": ""
             }
           ]
