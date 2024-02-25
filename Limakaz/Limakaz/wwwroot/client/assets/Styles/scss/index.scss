@@ -127,7 +127,7 @@
 
 }
 .login-btn{
-    width: 100px;
+    width: 90px;
     height: 71px;
     background-color: #f15834;
     display: flex;
@@ -239,6 +239,8 @@
   .main-middle-content{
    background-color: #e5e5e5;
    overflow: hidden;
+   display:flex;
+   justify-content:center;
   }
 
   .form-inp{

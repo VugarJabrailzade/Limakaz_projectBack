@@ -188,6 +188,12 @@ namespace Limakaz.Migrations
                     b.Property<bool>("IsPaid")
                         .HasColumnType("boolean");
 
+                    b.Property<int>("OfficeId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("OfficiesId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("OrderStatusId")
                         .HasColumnType("integer");
 
@@ -236,6 +242,8 @@ namespace Limakaz.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OfficiesId");
+
                     b.HasIndex("OrderStatusId");
 
                     b.ToTable("Order");
@@ -283,11 +291,17 @@ namespace Limakaz.Migrations
 
             modelBuilder.Entity("Limakaz.Database.DomainModels.Order", b =>
                 {
+                    b.HasOne("Limakaz.Database.DomainModels.Officies", "Officies")
+                        .WithMany()
+                        .HasForeignKey("OfficiesId");
+
                     b.HasOne("Limakaz.Database.DomainModelsı.OrderStatus", "OrderStatus")
                         .WithMany()
                         .HasForeignKey("OrderStatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Officies");
 
                     b.Navigation("OrderStatus");
                 });

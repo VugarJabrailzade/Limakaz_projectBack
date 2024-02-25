@@ -757,6 +757,10 @@
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\user-vector.png"
     },
     {
+      "Id": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\admin\\assets\\js\\AbroadOfficies.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\AbroadOfficies.js"
+    },
+    {
       "Id": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\admin\\assets\\js\\app.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\app.js"
     },

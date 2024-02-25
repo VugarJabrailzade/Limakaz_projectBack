@@ -30,7 +30,11 @@ namespace Limakaz
             app.UseStaticFiles();
             app.UseRouting();
             app.MapControllers();
-            app.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}");
+
 
         }
 
