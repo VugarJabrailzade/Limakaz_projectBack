@@ -1,0 +1,38 @@
+﻿@using Limakaz.ViewModels.Country
+@model CountriesViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<form method="post" class="row g-3">
+    <a asp-route="add-country-post"></a>
+    <div class="col-md-6">
+        <label asp-for="Name" class="form-label">Ölkə</label>
+        <input asp-for="Name" type="text" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+
+    </div>
+    <div class="col-md-6">
+        <label asp-for="CountryPrefix" class="form-label">Prefix</label>
+        <input asp-for="CountryPrefix" type="text" class="form-control">
+        <span asp-validation-for="CountryPrefix" class="text-danger"></span>
+
+    </div>
+    @* <div class="col-md-6">
+        <label asp-for="IsActive" class="form-label">Aktiv statusu</label>
+        <input asp-for="IsActive" type="text" class="form-control">
+        <span asp-validation-for="IsActive" class="text-danger"></span>
+
+    </div> *@
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Aktiv statusu</label>
+        <select id="inputState" asp-for="IsActive" class="form-select">
+            <option selected value="true">Aktiv</option>
+            <option value="false">Aktiv deyil</option>
+        </select>
+        <span asp-validation-for="IsActive" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Yadda Saxla</button>
+    </div>
+</form>
