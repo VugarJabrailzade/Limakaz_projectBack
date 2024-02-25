@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Migrations\\20240224212735_OrderStatusDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Limakaz\\Migrations\\20240224212735_OrderStatusDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\limakdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\limakdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\notifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\notifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\abroadaddressus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\abroadaddressus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,58 +19,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240224212735_OrderStatusDb.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Migrations\\20240224212735_OrderStatusDb.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Migrations\\20240224212735_OrderStatusDb.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Migrations\\20240224212735_OrderStatusDb.cs",
-              "RelativeToolTip": "Limakaz\\Migrations\\20240224212735_OrderStatusDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T21:27:35.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderStatus.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\OrderStatus.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\OrderStatus.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\OrderStatus.cs",
-              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\OrderStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T21:21:38.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LimakDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\LimakDbContext.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Database\\LimakDbContext.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\LimakDbContext.cs",
-              "RelativeToolTip": "Limakaz\\Database\\LimakDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T21:13:31.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Country.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Country.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Country.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Country.cs",
-              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Country.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T21:12:36.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Contact.cs",
               "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Contact.cs",
@@ -107,43 +27,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-24T20:43:00.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Notifications.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Notifications.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Notifications.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Notifications.cs",
-              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Notifications.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T20:42:59.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AbroadAddressUs.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
-              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\AbroadAddressUs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T20:14:20.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Order.cs",
-              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Order.cs",
-              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Order.cs",
-              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Order.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABcAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T21:08:16.189Z",
-              "EditorCaption": ""
             }
           ]
         }

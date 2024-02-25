@@ -1,0 +1,18 @@
+﻿@using Limakaz.ViewModels.OrderStatus
+@model OrderStatusViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<form method="post" class="row g-3">
+    <a asp-route="update-order-status-post" asp-route-id="@Model.Id"></a>
+    <div class="col-md-6">
+        <label asp-for="StatusName" class="form-label">Status</label>
+        <input asp-for="StatusName" type="text" class="form-control">
+        <span asp-validation-for="StatusName" class="text-danger"></span>
+
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Yadda Saxla</button>
+    </div>
+</form>

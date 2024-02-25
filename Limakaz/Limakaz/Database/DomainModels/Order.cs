@@ -22,4 +22,7 @@ public class Order : IEntity
     public DateTime UpdatedAt { get; set; }
     public int OrderStatusId { get; set; }
     public OrderStatus? OrderStatus { get; set; }
+
+    public int OfficeId { get; set; }
+    public Officies? Officies { get; set; }
 }
