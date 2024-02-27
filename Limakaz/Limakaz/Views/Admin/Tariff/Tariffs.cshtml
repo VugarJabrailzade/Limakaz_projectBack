@@ -1,0 +1,62 @@
+﻿@using Limakaz.Database.DomainModelsı
+@model List<Tariff>
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="col-sm-12">
+    <div class="page-title-box">
+        <div class="float-end">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Metrica</a>
+                </li><!--end nav-item-->
+                <li class="breadcrumb-item">
+                    <a href="#">Pages</a>
+                </li><!--end nav-item-->
+                <li class="breadcrumb-item active">Tariflər</li>
+            </ol>
+        </div>
+        <h4 class="page-title">Tariflər</h4>
+    </div><!--end page-title-box-->
+</div><!--end col-->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <a asp-route="add-tariff" class="btn btn-success">Yeni tarif əlavə et</a>
+            </div><!--end card-header-->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped mb-0">
+                        <thead>
+                            <tr>
+                                <th>Çəki</th>
+                                <th>Ölkə</th>
+                                <th>Qiymət (azn)</th>
+                                <th>Qiymət (usd)</th>
+                                <th class="text-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var tariff in Model)
+                            {
+                                <tr>
+                                    <td>@tariff.Weight</td>
+                                    <td>@tariff.Country.Name</td>
+                                    <td>@tariff.PriceAzn AZN</td>
+                                    <td>@tariff.PriceUsd $</td>
+                                    <td class="text-end">
+                                        <a asp-route="update-country" asp-route-id="@tariff.Id"><i class="las la-pen text-secondary font-16"></i></a>
+                                        <a asp-route="delete-country" asp-route-id="@tariff.Id"><i class="las la-trash-alt text-secondary font-16"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table><!--end /table-->
+                </div><!--end /tableresponsive-->
+            </div><!--end card-body-->
+        </div><!--end card-->
+    </div> <!-- end col -->
+    

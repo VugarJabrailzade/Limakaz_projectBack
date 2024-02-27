@@ -1,0 +1,127 @@
+﻿@using Limakaz.ViewModels.Tariff
+@model CombinedTariffViewModel
+@{
+    Layout = "_ClientLayout";
+}
+
+<link rel="stylesheet" href="~/client/assets/Styles/scss/tariff.css">
+<link rel="stylesheet" href="~/client/assets/Styles/scss/calculator.css">
+
+
+
+<!-- Middle Sections -->
+<div>
+    <!-- Middle Section -->
+    <div class="middlecontainer">
+        <!-- Tariff Plans -->
+        <div class="tariff-main-pg">
+            <div class="tarif-block">
+                <div class="tarif-head">
+                    <div>
+                        <h4>ÖLKƏLƏR ÜZRƏ TARİFLƏR</h4>
+                    </div>
+                    <ol class="tarif-breadcamp">
+                        <li>
+                            <a href="#">Ana səhifə</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <span>Tariflər</span>
+                        </li>
+                    </ol>
+                    <div class="slider-btn">
+                        <button class="move-prev" type="button">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="move-next" type="button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="tarif-card">
+                        <div class="tariff-card-left card-slide">
+                            <div class="tarif-card-header">
+                                <img src="https://limak.az/new_front/assets/img/icons/tr-circle.svg" alt="">
+                                <h3>Türkiyə</h3>
+                            </div>
+                            <div style="width: 350px;">
+                                <div class="row tarif-item-row">
+                                    @foreach(var officies in Model.Officies.OrderBy(p=> p.Id))
+                                    {
+                                      <a class="tarif-item  col-md-2">
+                                        <span>@officies.Name</span>
+                                    </a>
+                                        
+                                    }
+                                </div>
+                            </div>
+                            <div class="tarif-price">
+                                <table class="table">
+                                    <tbody class="tarif-table-main">
+                                        @foreach(var tarif in Model.Tariffs)
+                                        {
+                                            @if(tarif.CountryId == 1){
+                                            <tr class="tarif-table">
+                                            <td class="tarif-table-body table-body-mob">
+                                                <span class="weight-1">@tarif.Weight</span>
+                                            </td>
+                                            <td class="tarif-table-body table-body-mob">
+                                                <span class="price-2">@tarif.PriceAzn AZN | @tarif.PriceUsd $</span>
+                                            </td>
+                                            </tr>        
+                                            }
+                                        }
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tariff-card-right card-slide">
+                            <div class="tarif-card-header">
+                                <img src="https://limak.az/new_front/assets/img/icons/usa-circle.svg" alt="">
+                                <h3>Amerika</h3>
+                            </div>
+                            <div>
+                                <div class="row tarif-item-row">
+                                    @foreach (var officies in Model.Officies.OrderBy(p => p.Id))
+                                    {
+                                        <a class="tarif-item  col-md-2">
+                                            <span>@officies.Name</span>
+                                        </a>
+
+                                    }
+                                </div>
+                            </div>
+                            <div class="tarif-price">
+                                <table class="table">
+                                    <tbody class="tarif-table-main>
+                                        @foreach(var tariff in Model.Tariffs)
+                                        {
+                                            @if(tariff.CountryId == 2)
+                                            {
+                                            <tr class="tarif-table">
+                                            <td class="tarif-table-body">
+                                                <span class="weight-1">@tariff.Weight</span>
+                                            </td>
+                                            <td class="tarif-table-body">
+                                                <span class="price-2">@tariff.PriceAzn AZN | @tariff.PriceUsd $</span>
+                                            </td>
+                                        </tr>    
+                                            }
+                                            
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/client/assets/Js/tariff.js"></script>

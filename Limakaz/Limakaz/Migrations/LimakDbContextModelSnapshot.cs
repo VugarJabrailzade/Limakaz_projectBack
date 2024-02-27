@@ -22,6 +22,21 @@ namespace Limakaz.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("CountryTariff", b =>
+                {
+                    b.Property<int>("CountryId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TariffsId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CountryId", "TariffsId");
+
+                    b.HasIndex("TariffsId");
+
+                    b.ToTable("CountryTariff");
+                });
+
             modelBuilder.Entity("Limakaz.Database.DomainModels.AbroadAddressTr", b =>
                 {
                     b.Property<int>("Id")
@@ -141,6 +156,30 @@ namespace Limakaz.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("Limakaz.Database.DomainModels.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CountryPrefix")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Countries");
+                });
+
             modelBuilder.Entity("Limakaz.Database.DomainModels.Officies", b =>
                 {
                     b.Property<int>("Id")
@@ -249,7 +288,7 @@ namespace Limakaz.Migrations
                     b.ToTable("Order");
                 });
 
-            modelBuilder.Entity("Limakaz.Database.DomainModelsı.Country", b =>
+            modelBuilder.Entity("Limakaz.Database.DomainModels.Tariff", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -257,20 +296,22 @@ namespace Limakaz.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("CountryPrefix")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int?>("CountryId")
+                        .HasColumnType("integer");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
+                    b.Property<decimal>("PriceAzn")
+                        .HasColumnType("numeric");
 
-                    b.Property<string>("Name")
+                    b.Property<decimal>("PriceUsd")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Weight")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Tariffs");
                 });
 
             modelBuilder.Entity("Limakaz.Database.DomainModelsı.OrderStatus", b =>
@@ -287,6 +328,21 @@ namespace Limakaz.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("OrderStatus");
+                });
+
+            modelBuilder.Entity("CountryTariff", b =>
+                {
+                    b.HasOne("Limakaz.Database.DomainModels.Country", null)
+                        .WithMany()
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Limakaz.Database.DomainModels.Tariff", null)
+                        .WithMany()
+                        .HasForeignKey("TariffsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Limakaz.Database.DomainModels.Order", b =>

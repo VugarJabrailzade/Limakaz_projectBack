@@ -1,6 +1,6 @@
 ﻿using Limakaz.Database;
-using Limakaz.Database.DomainModelsı;
-using Limakaz.ViewModels.Country;
+using Limakaz.Database.DomainModels;
+using Limakaz.ViewModels.Countries;
 using Limakaz.ViewModels.OrderStatus;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
