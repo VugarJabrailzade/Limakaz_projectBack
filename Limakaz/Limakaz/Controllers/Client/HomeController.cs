@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace Limakaz.Controllers.Client;
-
 public class HomeController : Controller
 {
     [HttpGet]
