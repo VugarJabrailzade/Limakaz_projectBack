@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Limakaz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26cb20daaeb16994e8e6fca8b287f5e42e453a46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+debb4ff9697287abdd0ca19024b50508da1fc5dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Limakaz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Limakaz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

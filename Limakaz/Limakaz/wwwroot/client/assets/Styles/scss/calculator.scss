@@ -432,7 +432,8 @@
         height: 40px;
         border-radius: 5px;
         border: 1px solid #dfdfdf;
-        &::placeholder{
+        padding-left: 30px;
+        &:focus{
             padding-left: 10px;
         }
     }

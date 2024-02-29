@@ -97,4 +97,9 @@ visibilityBtnPassConfirm.addEventListener("click", (e)=>{
 
 // FORMDA PASSWORD SHOW FUNKSIYASI -----END-----
 
+var registerBtn = document.querySelector(".regr-btn");
 
+registerBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("ishledi sikilmish")
+})

@@ -11,6 +11,7 @@ namespace Limakaz.Database.DomainModels
         public string OpeningTime { get; set; }
         public string ClosetingTime { get;  set; }
 
+        public List<User> Users { get; set; }
     }
 
 }

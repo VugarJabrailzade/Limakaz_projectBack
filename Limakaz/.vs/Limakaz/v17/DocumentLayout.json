@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\viewmodels\\auth\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\viewmodels\\auth\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\controllers\\admin\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\controllers\\admin\\tariffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\database\\domainmodels\\officies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\database\\domainmodels\\officies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\controllers\\client\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\controllers\\client\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\contracts\\persontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\contracts\\persontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\wwwroot\\client\\assets\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\wwwroot\\client\\assets\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\views\\auth\\userpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\views\\auth\\userpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\services\\concretes\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\services\\concretes\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\contracts\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\contracts\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\views\\shared\\_clientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\views\\shared\\_clientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|c:\\users\\vcebr\\onedrive\\desktop\\limakaz_projectback\\limakaz\\limakaz\\controllers\\client\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2E2DF2-0FAE-497F-8AA1-289BF02D4104}|Limakaz\\Limakaz.csproj|solutionrelative:limakaz\\controllers\\client\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +58,160 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Officies.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Officies.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Database\\DomainModels\\Officies.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Database\\DomainModels\\Officies.cs",
+              "RelativeToolTip": "Limakaz\\Database\\DomainModels\\Officies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T22:00:44.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\ViewModels\\Auth\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Limakaz\\ViewModels\\Auth\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\ViewModels\\Auth\\RegisterViewModel.cs",
+              "RelativeToolTip": "Limakaz\\ViewModels\\Auth\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T21:55:40.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "register.js",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\client\\assets\\Js\\register.js",
+              "RelativeDocumentMoniker": "Limakaz\\wwwroot\\client\\assets\\Js\\register.js",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\client\\assets\\Js\\register.js",
+              "RelativeToolTip": "Limakaz\\wwwroot\\client\\assets\\Js\\register.js",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAIwGMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-02-29T21:17:48.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterService.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Services\\Concretes\\RegisterService.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Services\\Concretes\\RegisterService.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Services\\Concretes\\RegisterService.cs",
+              "RelativeToolTip": "Limakaz\\Services\\Concretes\\RegisterService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T13:15:32.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserPanel.cshtml",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Auth\\UserPanel.cshtml",
+              "RelativeDocumentMoniker": "Limakaz\\Views\\Auth\\UserPanel.cshtml",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Auth\\UserPanel.cshtml",
+              "RelativeToolTip": "Limakaz\\Views\\Auth\\UserPanel.cshtml",
+              "ViewState": "AQIAAKEBAAAAAAAAAAAAAAQAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-29T12:35:16.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Contracts\\Role.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Contracts\\Role.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Contracts\\Role.cs",
+              "RelativeToolTip": "Limakaz\\Contracts\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T21:43:37.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonType.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Contracts\\PersonType.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Contracts\\PersonType.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Contracts\\PersonType.cs",
+              "RelativeToolTip": "Limakaz\\Contracts\\PersonType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T21:43:15.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ClientLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Shared\\_ClientLayout.cshtml",
+              "RelativeDocumentMoniker": "Limakaz\\Views\\Shared\\_ClientLayout.cshtml",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Shared\\_ClientLayout.cshtml",
+              "RelativeToolTip": "Limakaz\\Views\\Shared\\_ClientLayout.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-28T21:24:49.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Limakaz\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Limakaz\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAAAEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-28T21:19:55.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Controllers\\Client\\AuthController.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Controllers\\Client\\AuthController.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Controllers\\Client\\AuthController.cs",
+              "RelativeToolTip": "Limakaz\\Controllers\\Client\\AuthController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAADgvxYAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T21:19:03.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Controllers\\Client\\HomeController.cs",
+              "RelativeDocumentMoniker": "Limakaz\\Controllers\\Client\\HomeController.cs",
+              "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Controllers\\Client\\HomeController.cs",
+              "RelativeToolTip": "Limakaz\\Controllers\\Client\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T07:58:03.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TariffController.cs",
               "DocumentMoniker": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Controllers\\Admin\\TariffController.cs",
               "RelativeDocumentMoniker": "Limakaz\\Controllers\\Admin\\TariffController.cs",
               "ToolTip": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Controllers\\Admin\\TariffController.cs",
               "RelativeToolTip": "Limakaz\\Controllers\\Admin\\TariffController.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAuwJAAAABJAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T07:19:09.002Z",
               "EditorCaption": ""

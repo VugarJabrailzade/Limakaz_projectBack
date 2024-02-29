@@ -18,5 +18,7 @@ namespace Limakaz.Database
            public DbSet<Country> Countries { get; set; }
            public DbSet<OrderStatus> OrderStatus { get; set; }
            public DbSet<Tariff> Tariffs { get; set; }
+           public DbSet<User> Users { get; set; }
+           public DbSet<UserRole> UserRoles { get; set; }
     }
 }

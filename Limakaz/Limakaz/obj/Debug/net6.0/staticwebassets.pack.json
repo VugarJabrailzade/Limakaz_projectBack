@@ -3717,6 +3717,10 @@
       "PackagePath": "staticwebassets\\client\\assets\\Js\\common.js"
     },
     {
+      "Id": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\client\\assets\\Js\\custmJs\\LoginModal.js",
+      "PackagePath": "staticwebassets\\client\\assets\\Js\\custmJs\\LoginModal.js"
+    },
+    {
       "Id": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\client\\assets\\Js\\main.js",
       "PackagePath": "staticwebassets\\client\\assets\\Js\\main.js"
     },

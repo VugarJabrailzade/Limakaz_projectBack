@@ -22,21 +22,6 @@ namespace Limakaz.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CountryTariff", b =>
-                {
-                    b.Property<int>("CountryId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("TariffsId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("CountryId", "TariffsId");
-
-                    b.HasIndex("TariffsId");
-
-                    b.ToTable("CountryTariff");
-                });
-
             modelBuilder.Entity("Limakaz.Database.DomainModels.AbroadAddressTr", b =>
                 {
                     b.Property<int>("Id")
@@ -165,14 +150,12 @@ namespace Limakaz.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CountryPrefix")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -311,7 +294,112 @@ namespace Limakaz.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CountryId");
+
                     b.ToTable("Tariffs");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("BirthdayDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FinCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsEmailConfirmed")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("NotificationType")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("OfficeId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("OfficiesId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("PersonType")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("RulesAccepted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OfficiesId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.UserRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserRoles");
                 });
 
             modelBuilder.Entity("Limakaz.Database.DomainModelsı.OrderStatus", b =>
@@ -330,21 +418,6 @@ namespace Limakaz.Migrations
                     b.ToTable("OrderStatus");
                 });
 
-            modelBuilder.Entity("CountryTariff", b =>
-                {
-                    b.HasOne("Limakaz.Database.DomainModels.Country", null)
-                        .WithMany()
-                        .HasForeignKey("CountryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Limakaz.Database.DomainModels.Tariff", null)
-                        .WithMany()
-                        .HasForeignKey("TariffsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Limakaz.Database.DomainModels.Order", b =>
                 {
                     b.HasOne("Limakaz.Database.DomainModels.Officies", "Officies")
@@ -360,6 +433,47 @@ namespace Limakaz.Migrations
                     b.Navigation("Officies");
 
                     b.Navigation("OrderStatus");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.Tariff", b =>
+                {
+                    b.HasOne("Limakaz.Database.DomainModels.Country", "Country")
+                        .WithMany("Tariffs")
+                        .HasForeignKey("CountryId");
+
+                    b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.User", b =>
+                {
+                    b.HasOne("Limakaz.Database.DomainModels.Officies", "Officies")
+                        .WithMany()
+                        .HasForeignKey("OfficiesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Officies");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.UserRole", b =>
+                {
+                    b.HasOne("Limakaz.Database.DomainModels.User", "User")
+                        .WithMany("UserRole")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.Country", b =>
+                {
+                    b.Navigation("Tariffs");
+                });
+
+            modelBuilder.Entity("Limakaz.Database.DomainModels.User", b =>
+                {
+                    b.Navigation("UserRole");
                 });
 #pragma warning restore 612, 618
         }

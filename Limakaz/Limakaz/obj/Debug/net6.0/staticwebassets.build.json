@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i9xvqCpvzl9McqKfUQdiWu2INQ+W5AgtNRahoJf3HJY=",
+  "Hash": "tFMyCVFf9t7XqXngZr8XV7wZ7w1PctsUvzMLM5+QPIA=",
   "Source": "Limakaz",
   "BasePath": "_content/Limakaz",
   "Mode": "Default",
@@ -17666,6 +17666,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\client\\assets\\Js\\common.js"
+    },
+    {
+      "Identity": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\client\\assets\\Js\\custmJs\\LoginModal.js",
+      "SourceId": "Limakaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\",
+      "BasePath": "_content/Limakaz",
+      "RelativePath": "client/assets/Js/custmJs/LoginModal.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\Js\\custmJs\\LoginModal.js"
     },
     {
       "Identity": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\wwwroot\\client\\assets\\Js\\main.js",
