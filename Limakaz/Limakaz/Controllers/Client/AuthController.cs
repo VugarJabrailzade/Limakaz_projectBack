@@ -2,6 +2,7 @@
 using Limakaz.Database.DomainModels;
 using Limakaz.ViewModels.Auth;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Limakaz.Controllers.Client
 {
@@ -17,16 +18,24 @@ namespace Limakaz.Controllers.Client
         [HttpGet]
         public IActionResult Register()
         {
-            return View();
+            var model = new RegisterResponseViewModel
+            {
+                Officies = _limakDbContext.Officies.ToList()
+            };
+            
+            return View(model);
         }
 
         [HttpPost("register", Name ="user-register-post")]
         public IActionResult Register(RegisterViewModel model)
         {
+            var fullPhoneNum = model.PhonePrefix + model.PhoneNumber;
+
             if(!ModelState.IsValid)
             {
                 return View();
             }
+
 
             if (_limakDbContext.Users.Any(x => x.Email == model.Email))
             {

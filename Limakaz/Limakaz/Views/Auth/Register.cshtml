@@ -1,10 +1,10 @@
-﻿@using Limakaz.Contracts
+﻿﻿@using Limakaz.Contracts
 @model RegisterViewModel;
 @{
     Layout = "_ClientLayout";
 }
 
-@section custom_plugin_styles{
+@section custom_plugin_styles {
     <link rel="stylesheet" href="~/client/assets/Styles/scss/register.css">
 
 }
@@ -56,7 +56,7 @@
                                         <div class="col-6">
                                             <input type="text" asp-for="Name" placeholder="Ad" required="required"
                                                    class="form-control reg-name" id="validationCustom04" required>
-                                             <span asp-validation-for="Name"></span>
+                                            <span asp-validation-for="Name"></span>
                                         </div>
                                         <div class="col-6">
                                             <input type="text" asp-for="Surname" placeholder="Soyad" required="required"
@@ -74,34 +74,34 @@
                                         <div class="col-12">
                                             <div class="regr-phone-group" role="group">
                                                 <div class="phone-prefix-regr">
-                                                    <div class="dropdown b-dropdown btn-group">
+                                                    <div class="dropdown b-dropdown btn-group" >
                                                         <!-- <button type="button">050</button> -->
-                                                        <select class="dropdown-select-prefix">
-                                                            <option value="1">
+                                                        <select class="dropdown-select-prefix" asp-for="PhonePrefix">
+                                                            <option value="050">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">050</a>
                                                             </option>
-                                                            <option value="2">
+                                                            <option value="099">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">099</a>
                                                             </option>
-                                                            <option value="3">
+                                                            <option value="055">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">055</a>
                                                             </option>
-                                                            <option value="4">
+                                                            <option value="051">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">051</a>
                                                             </option>
-                                                            <option value="5">
+                                                            <option value="070">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">070</a>
                                                             </option>
-                                                            <option value="6">
+                                                            <option value="077">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">077</a>
                                                             </option>
-                                                            <option value="7">
+                                                            <option value="010">
                                                                 <a href="#" target="_self"
                                                                    class="dropdown-option">010</a>
                                                             </option>
@@ -127,6 +127,7 @@
                                             <input id="password-confirmation-regr" asp-for="ConfirmPassword" type="password"
                                                    autocomplete="current-password"
                                                    placeholder="Şifrənin təkrarı" required="required">
+                                                   <span asp-validation-for="ConfirmPassword"></span>
                                             <a class="visibility-btn-password-confirm">
                                                 <span class="confr-password-show shop-p"></span>
                                             </a>
@@ -134,17 +135,19 @@
                                         <div class="col-md-6 col-12">
                                             <select id="deliveryOffice" asp-for="OfficeId" class="delivary-office-regr">
                                                 <option disabled="disabled">Çatdırılma ofisi</option>
-                                                @foreach(var office in Model.Officies)
+                                                @foreach (var office in Model.Officies)
                                                 {
                                                     <option value="@office.Id">@office.Name</option>
                                                 }
                                             </select>
                                         </div>
                                         <div class="col-md-6 col-12">
-                                            <select class="notif-type-regr">
+                                            <select class="notif-type-regr" asp-for="NotificationType">
                                                 <option disabled="disabled">Bildiriş tipi</option>
-                                                <option value="1">SMS</option>
-                                                <option value="2">Whatsapp</option>
+                                                @foreach (var item in Enum.GetValues(typeof(NotificationType)))
+                                                {
+                                                    <option value="@item">@item</option>
+                                                }
                                             </select>
                                         </div>
                                     </div>
@@ -155,37 +158,40 @@
                                     </h3>
                                     <div class="row">
                                         <div class="col-12">
-                                            <select class="select-nation-regr">
+                                            <select class="select-nation-regr" asp-for="Nationality">
                                                 <option disabled="disabled" value="0">Vətəndaşlığı</option>
                                                 <option value="Azərbaycan">Azərbaycan</option>
-                                                <option value="Xarici">Digər</option>
+                                                @* <option value="Xarici">Digər</option> *@
 
                                             </select>
                                         </div>
                                         <div class="col-12">
-                                            <input type="text" placeholder="Seriya nömrəsi" required="required"
+                                            <input type="text" asp-for="SerialNumber" placeholder="Seriya nömrəsi" required="required"
                                                    id="serial-num" class="serial-number form-control">
+                                            <span asp-validation-for="SerialNumber"></span>
                                         </div>
                                         <div class="col-12">
                                             <div>
                                                 <div class="date-input">
-                                                    <input type="date" class="date-input-regr form-control"
+                                                    <input type="date" asp-for="BirthdayDate"
+                                                           class="date-input-regr form-control"
                                                            max="2007-01-01" id="validationCustom08"
                                                            required="required">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <select class="select-gender-regr">
+                                            <select class="select-gender-regr" asp-for="Gender">
                                                 <option disabled="disabled" value="0">Cinsi</option>
-                                                <option value="1">Kişi</option>
-                                                <option value="2">Qadın</option>
+                                                <option value="Kişi">Kişi</option>
+                                                <option value="Qadın">Qadın</option>
                                             </select>
                                         </div>
                                         <div class="col-12">
-                                            <input type="text" placeholder="FİN*"
+                                            <input type="text" asp-for="FinCode" placeholder="FİN*"
                                                    id="regr-fin validationCustom07"
                                                    class="form-control regr-fin-code" required="required">
+                                            <span asp-validation-for="FinCode"></span>
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleFin"
                                                id="Fin">
                                                 <i class="fa-solid fa-circle-info"></i>
@@ -217,17 +223,18 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <input type="text" id="regr-adress" required="required"
+                                            <input type="text" asp-for="Address" id="regr-adress" required="required"
                                                    placeholder="Ş/V-dəki ünvan" class="form-control">
+                                            <span asp-validation-for="Address"></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-regr-footer">
                                     <div class="form-check-checkbox">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" asp-for="RulesAccepted" type="checkbox"
                                                    id="invalidCheck" required>
-                                            <label class="form-check-label" for="invalidCheck">
+                                            <label class="form-check-label" asp-for="RulesAccepted" for="invalidCheck">
                                                 <a id="terms-link" data-bs-toggle="modal"
                                                    data-bs-target="#exampleTermandCondi" required="required">
                                                     İstifadəçi qaydaları ilə razıyam
@@ -346,9 +353,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="regr-btn btn">
-                                        <span>QEYDİYYAT</span>
-                                    </button>
+                                    <button  class="btn btn-submit btn-primary" type="submit">Submit form</button>
+                                    @* id="regr-btn" *@
                                 </div>
                             </div>
                         </form>
@@ -360,7 +366,7 @@
     </div>
 </div>
 
- @section custom_plugin_scripts{
+@section custom_plugin_scripts {
     <script src="~/client/assets/Js/register.js"></script>
 
- }
+}
