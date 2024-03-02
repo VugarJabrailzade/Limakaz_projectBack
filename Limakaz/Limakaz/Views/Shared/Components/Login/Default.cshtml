@@ -1,0 +1,83 @@
+﻿@model LoginViewModel 
+
+<!-- LOG IN MODAL -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <div class="modal-block">
+                        <div class="modal-block-body">
+                            <div class="modal-card">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="login-modal-head">
+                                            <img class="login-modal-icon" src="https://limak.az/new_front/assets/img/icons/user-color.svg" alt="">
+                                            <h1 class="login-modal-head-title upper">HESABA DAXIL OL</h1>
+                                        </div>
+                                        <form method="post" asp-route="login-post" class="login-form-action">
+                                            <input type="email" asp-for="Email" name="email" id="login-email" required="required"
+                                                   placeholder="E-mail*" class="login-email-input">
+                                            <div class="login-password-input">
+                                                <input type="password" asp-for=Password name="password" id="login-password"
+                                                       placeholder="Şifrə*" class="login-email-input" required="required">
+                                                <a class="visibility-btn-password">
+                                                    <span class="show-password hide-eye">
+
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="remember-me-radio">
+                                                <div>
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <div>
+                                                                <input id="__Rem-Me" type="checkbox" value="checked">
+                                                                <label for="__Rem-Me">Məni xatırla</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="text-right">
+                                                                <a href="#">
+                                                                    <img src="https://limak.az/new_front/assets/img/icons/help.svg" alt="">
+                                                                    <span>Şifrəni unutmusuz</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="login-submit">
+                                                        <button type="submit" class="login-btn-modal">
+                                                            <span>Daxil ol</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="register-btn-modal">
+                                                        <a asp-controller="auth" asp-action="register" target="_self" class="register-btn">QEYDIYYAT</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="modal-card-img login-modal-right">
+                                            <img src="https://limak.az/new_front/assets/img/login-image.svg"
+                                                 class="login-modal-img" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -21,6 +21,17 @@ namespace Limakaz.Controllers.Client
         }
 
         [HttpGet]
+        public IActionResult Login()
+        {
+            return ViewComponent("Login");
+        }
+        [HttpPost("login", Name ="login-post")]
+        public IActionResult Login(LoginViewModel model)
+        {
+             return View(model);
+        }
+
+        [HttpGet]
         public IActionResult Register()
         {
             var offices = _limakDbContext.Officies.ToList();
