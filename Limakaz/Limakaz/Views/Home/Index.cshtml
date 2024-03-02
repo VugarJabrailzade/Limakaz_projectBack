@@ -1,7 +1,9 @@
 ﻿@using Limakaz.Database
-@model LimakDbContext;
+@inject LimakDbContext dbContext
 @{
     Layout = "_ClientLayout";
+    var officies = dbContext.Officies.OrderBy(o => o.Id).ToList();
+    var tariffs = dbContext.Tariffs.OrderBy(t => t.Id).ToList();
 }
 
 <link rel="stylesheet" href="~/client/assets/Styles/scss/index.css">
@@ -229,10 +231,10 @@
                             </div>
                             <div style="width: 350px;">
                                 <div class="row tarif-item-row">
-                                    @foreach(var officies in Model.Officies.OrderBy(v=> v.Id))
+                                    @foreach(var office in officies)
                                     {
                                         <a class="tarif-item col-md-2">
-                                        <span>@officies.Name</span>
+                                            <span>@office.Name</span>
                                         </a>
                             
                                     }
@@ -241,7 +243,7 @@
                             <div class="tarif-price">
                                 <table class="table">
                                     <tbody class="tarif-table-main">
-                                        @foreach(var tariff in Model.Tariffs.OrderBy(d=> d.Id))
+                                        @foreach(var tariff in tariffs)
                                         {
                                             @if(tariff.CountryId == 1)
                                             {
@@ -268,10 +270,10 @@
                             </div>
                             <div>
                                 <div class="row tarif-item-row">
-                                    @foreach (var officies in Model.Officies.OrderBy(y=> y.Id))
+                                    @foreach (var office in officies)
                                     {
                                         <a class="tarif-item col-md-2">
-                                            <span>@officies.Name</span>
+                                            <span>@office.Name</span>
                                         </a>
 
                                     }
@@ -281,7 +283,7 @@
                             <div class="tarif-price">
                                 <table class="table">
                                     <tbody>
-                                        @foreach (var tariff in Model.Tariffs)
+                                        @foreach (var tariff in tariffs)
                                         {
                                             @if (tariff.CountryId == 2)
                                             {

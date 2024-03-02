@@ -210,9 +210,6 @@ namespace Limakaz.Migrations
                     b.Property<bool>("IsPaid")
                         .HasColumnType("boolean");
 
-                    b.Property<int>("OfficeId")
-                        .HasColumnType("integer");
-
                     b.Property<int?>("OfficiesId")
                         .HasColumnType("integer");
 
@@ -314,6 +311,10 @@ namespace Limakaz.Migrations
                     b.Property<DateTime>("BirthdayDate")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("CustomerCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
@@ -346,9 +347,6 @@ namespace Limakaz.Migrations
                     b.Property<int>("OfficeId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("OfficiesId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("text");
@@ -375,8 +373,6 @@ namespace Limakaz.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OfficiesId");
 
                     b.ToTable("Users");
                 });
@@ -418,6 +414,21 @@ namespace Limakaz.Migrations
                     b.ToTable("OrderStatus");
                 });
 
+            modelBuilder.Entity("OfficiesUser", b =>
+                {
+                    b.Property<int>("OfficiesId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UsersId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("OfficiesId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("OfficiesUser");
+                });
+
             modelBuilder.Entity("Limakaz.Database.DomainModels.Order", b =>
                 {
                     b.HasOne("Limakaz.Database.DomainModels.Officies", "Officies")
@@ -444,17 +455,6 @@ namespace Limakaz.Migrations
                     b.Navigation("Country");
                 });
 
-            modelBuilder.Entity("Limakaz.Database.DomainModels.User", b =>
-                {
-                    b.HasOne("Limakaz.Database.DomainModels.Officies", "Officies")
-                        .WithMany()
-                        .HasForeignKey("OfficiesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Officies");
-                });
-
             modelBuilder.Entity("Limakaz.Database.DomainModels.UserRole", b =>
                 {
                     b.HasOne("Limakaz.Database.DomainModels.User", "User")
@@ -464,6 +464,21 @@ namespace Limakaz.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OfficiesUser", b =>
+                {
+                    b.HasOne("Limakaz.Database.DomainModels.Officies", null)
+                        .WithMany()
+                        .HasForeignKey("OfficiesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Limakaz.Database.DomainModels.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Limakaz.Database.DomainModels.Country", b =>

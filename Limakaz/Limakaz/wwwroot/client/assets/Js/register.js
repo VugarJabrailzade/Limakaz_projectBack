@@ -1,46 +1,46 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'
-  
+
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
-  
+
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms).forEach(function (form) {
         form.addEventListener("blur", function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
         }, true)
-      })
-  })()
+    })
+})()
 
 
-  var prefix = document.querySelector(".dropdown-select-prefix");
+var prefix = document.querySelector(".dropdown-select-prefix");
 
-  prefix.addEventListener("change",(e)=>{
+prefix.addEventListener("change", (e) => {
     e.preventDefault();
     var optionValue = e.target.value
     console.log(optionValue)
-  })
+})
 
 
-  // onkeydown="if(this.value.length == 7 && event.keyCode!=8) return false
+// onkeydown="if(this.value.length == 7 && event.keyCode!=8) return false
 
-  var termAgreBtn = document.querySelector(".btn-terms-agree");
+var termAgreBtn = document.querySelector(".btn-terms-agree");
 var termAgrement = document.querySelector(".form-check-input");
 var modalTerms = document.getElementById("exampleTermandCondi");
 var modalBackShadow = document.querySelector(".modal-backdrop");
 var termModalClose = document.querySelector(".btn-close");
 
 termAgreBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  termAgrement.checked = true;
-  modalTerms.style.display = "none"
- 
+    e.preventDefault();
+    termAgrement.checked = true;
+    modalTerms.style.display = "none"
+
 });
 
 
@@ -63,37 +63,49 @@ var visibilityBtnPassword = document.querySelector(".visibility-btn-new-password
 var visibilityBtnPassConfirm = document.querySelector(".visibility-btn-password-confirm");
 
 
-visibilityBtnPassword.addEventListener("click", (e)=>{
-  e.preventDefault();
-  var  newPasswordValue = newPassword.value.trim();
-  if(newPasswordValue !== ""){
-    if(newPassword.type == "text"){
-      newPassword.type = "password"
+visibilityBtnPassword.addEventListener("click", (e) => {
+    e.preventDefault();
+    var newPasswordValue = newPassword.value.trim();
+    if (newPasswordValue !== "") {
+        if (newPassword.type == "text") {
+            newPassword.type = "password"
+        }
+        else {
+            newPassword.type = "text"
+        }
     }
-    else{
-      newPassword.type = "text"
-    }
-  }
 
 })
 
-visibilityBtnPassConfirm.addEventListener("click", (e)=>{
-  e.preventDefault();
-  console.log("ishledi")
+visibilityBtnPassConfirm.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("ishledi")
 
-  var currentPasValue = confirmPassword.value.trim();
+    var currentPasValue = confirmPassword.value.trim();
 
-  if(currentPasValue !== ""){
-    if(confirmPassword.type == "text"){
-      confirmPassword.type = "password"
+    if (currentPasValue !== "") {
+        if (confirmPassword.type == "text") {
+            confirmPassword.type = "password"
+        }
+        else {
+            confirmPassword.type = "text"
+
+        }
     }
-    else{
-      confirmPassword.type = "text"
-  
-    }
-  }
 
 })
 
 // FORMDA PASSWORD SHOW FUNKSIYASI -----END-----
 
+
+function checkBox() {
+    var checkBox = document.querySelector(".form-check-input");
+    if (checkBox.checked) {
+        return checkBox.value = true;
+    }
+    else {
+        return checkBox.value = false;
+
+    }
+
+}

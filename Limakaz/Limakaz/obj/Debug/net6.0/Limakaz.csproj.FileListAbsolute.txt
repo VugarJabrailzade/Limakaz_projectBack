@@ -363,3 +363,4 @@ C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\ne
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\obj\Debug\net6.0\Limakaz.csproj.Up2Date
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\bin\Debug\net6.0\Microsoft.AspNetCore.NodeServices.dll
 C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\vcebr\OneDrive\Desktop\Limakaz_projectBack\Limakaz\Limakaz\bin\Debug\net6.0\BCrypt.Net-Next.dll

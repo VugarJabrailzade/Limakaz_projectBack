@@ -1,12 +1,13 @@
 ﻿using Limakaz.Contracts;
+using Limakaz.Migrations;
 using Limakaz.Database.DomainModels;
-using Limakaz.ViewModels.Officies;
 using System.ComponentModel.DataAnnotations;
 
 namespace Limakaz.ViewModels.Auth
 {
     public class RegisterViewModel
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
@@ -22,9 +23,9 @@ namespace Limakaz.ViewModels.Auth
         public string Address { get; set; }
         public string FinCode { get; set; }
         public string SerialNumber { get; set; }
-        public bool RulesAccepted { get; set; } = false;
+        public bool RulesAccepted { get; set; } 
         public int OfficeId { get; set; }
-        public List<Database.DomainModels.Officies>? Officies { get; set; }
+        public List<Database.DomainModels.Officies> Officies { get; set; }
         public PersonType PersonType { get; set; }
         public NotificationType NotificationType { get; set; }
     }

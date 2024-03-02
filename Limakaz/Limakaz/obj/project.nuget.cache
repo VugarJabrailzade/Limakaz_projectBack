@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "I5QDMKTF+L5ZgykmhKYu5GPySZPAmCpTR8g5rZGPoQ6akXwzIqw1sIwoq3+MRD1ZCctiYT/dSakg4hrorOLI1w==",
+  "dgSpecHash": "O8OF09FL3k2HsyvXgHUQKWbZFfLMXY4gKVgpWL46Qy6g2Mn4bXk86dj4G7ABYcU4cMoWf3maXhYEzLqxO5DikA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Limakaz_projectBack\\Limakaz\\Limakaz\\Limakaz.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vcebr\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\vcebr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vcebr\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.27\\microsoft.aspnetcore.mvc.razor.extensions.6.0.27.nupkg.sha512",
     "C:\\Users\\vcebr\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.27\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.27.nupkg.sha512",

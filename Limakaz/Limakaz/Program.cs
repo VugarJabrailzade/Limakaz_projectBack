@@ -27,9 +27,13 @@ namespace Limakaz
 
         private static void ConfigureMiddleWareServices(WebApplication app)
         {
+
             app.UseStaticFiles();
+
             app.UseRouting();
             app.MapControllers();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",

@@ -1,4 +1,6 @@
 ﻿using Limakaz.Database;
+using Limakaz.Services.Abstract;
+using Limakaz.Services.Concretes;
 using Microsoft.EntityFrameworkCore;
 
 namespace Limakaz.Extensions;
@@ -16,7 +18,10 @@ public static class IServiceCollectionExtensions
 
     public static void AddCustomService(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<LimakDbContext>(o =>
+        services.
+             AddHttpContextAccessor()
+            .AddScoped<IRegisterService, RegisterService>()
+            .AddDbContext<LimakDbContext>(o =>
         {
             var connectionString = configuration.GetConnectionString("LimakKargo");
             o.UseNpgsql(connectionString);

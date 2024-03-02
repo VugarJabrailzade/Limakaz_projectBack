@@ -1,5 +1,5 @@
-﻿﻿@using Limakaz.Contracts
-@model RegisterViewModel;
+﻿    ﻿@using Limakaz.Contracts
+@model RegisterViewModel
 @{
     Layout = "_ClientLayout";
 }
@@ -134,11 +134,10 @@
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <select id="deliveryOffice" asp-for="OfficeId" class="delivary-office-regr">
-                                                <option disabled="disabled">Çatdırılma ofisi</option>
-                                                @foreach (var office in Model.Officies)
+                                                @foreach(var ofis in Model.Officies)
                                                 {
-                                                    <option value="@office.Id">@office.Name</option>
-                                                }
+                                                    <option value=@ofis.Id>@ofis.Name</option>
+                                                };
                                             </select>
                                         </div>
                                         <div class="col-md-6 col-12">
@@ -225,7 +224,6 @@
                                         <div class="col-12">
                                             <input type="text" asp-for="Address" id="regr-adress" required="required"
                                                    placeholder="Ş/V-dəki ünvan" class="form-control">
-                                            <span asp-validation-for="Address"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -233,7 +231,7 @@
                                     <div class="form-check-checkbox">
                                         <div class="form-check">
                                             <input class="form-check-input" asp-for="RulesAccepted" type="checkbox"
-                                                   id="invalidCheck" required>
+                                                   id="invalidCheck" required value="" onclick="checkBox()">
                                             <label class="form-check-label" asp-for="RulesAccepted" for="invalidCheck">
                                                 <a id="terms-link" data-bs-toggle="modal"
                                                    data-bs-target="#exampleTermandCondi" required="required">

@@ -5,10 +5,10 @@ namespace Limakaz.Contracts
     public enum PersonType
     {
         [EnumMember(Value = "Fiziki şəxs")]
-        Fiziki,
+        Fiziki = 1,
 
         [EnumMember(Value = "Hüquqi şəxs")]
-        Hüquqi
+        Hüquqi = 2
 
 
     }

@@ -2,7 +2,7 @@
 {
     public enum NotificationType
     {
-        SMS,
-        Whatsapp
+        SMS = 1,
+        Whatsapp = 2
     }
 }
