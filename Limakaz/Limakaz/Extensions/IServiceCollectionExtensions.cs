@@ -27,5 +27,17 @@ public static class IServiceCollectionExtensions
             o.UseNpgsql(connectionString);
         });
     }
+
+    public static void AddAuth(this IServiceCollection serviceCollection)
+    {
+        serviceCollection
+            .AddAuthentication("Cookie").
+            AddCookie("Cookie", o =>
+            {
+                o.LoginPath = "/auth/UserPanel.cshtml";
+                o.LogoutPath = "/home/index";
+                o.AccessDeniedPath = "/home/index";
+            });
+    }
 }
     

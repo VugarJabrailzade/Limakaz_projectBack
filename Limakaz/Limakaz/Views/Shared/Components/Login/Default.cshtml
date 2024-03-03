@@ -1,4 +1,4 @@
-﻿@model LoginViewModel 
+﻿@model LoginViewModel
 
 <!-- LOG IN MODAL -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -26,7 +26,6 @@
                                                        placeholder="Şifrə*" class="login-email-input" required="required">
                                                 <a class="visibility-btn-password">
                                                     <span class="show-password hide-eye">
-
                                                     </span>
                                                 </a>
                                             </div>
@@ -35,8 +34,9 @@
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <div>
-                                                                <input id="__Rem-Me" type="checkbox" value="checked">
-                                                                <label for="__Rem-Me">Məni xatırla</label>
+                                                                <input id="__Rem-Me" asp-for="RememberMe"
+                                                                        type="checkbox" value="">
+                                                                <label for="__Rem-Me" asp-for="RememberMe">Məni xatırla</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-7">
@@ -60,7 +60,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="register-btn-modal">
-                                                        <a asp-controller="auth" asp-action="register" target="_self" class="register-btn">QEYDIYYAT</a>
+                                                        <a asp-route="user-register" target="_self" class="register-btn">QEYDIYYAT</a>
                                                     </div>
                                                 </div>
                                             </div>

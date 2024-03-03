@@ -1,11 +1,13 @@
 ﻿using BCrypt.Net;
 using Limakaz.Database;
 using Limakaz.Database.DomainModels;
+using Limakaz.Exceptions;
 using Limakaz.Services.Abstract;
 using Limakaz.ViewModels.Auth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Limakaz.Controllers.Client
 {
@@ -21,17 +23,54 @@ namespace Limakaz.Controllers.Client
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
             return ViewComponent("Login");
         }
+
         [HttpPost("login", Name ="login-post")]
-        public IActionResult Login(LoginViewModel model)
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
-             return View(model);
+            var user = _limakDbContext.Users.Include(x=> x.Officies).
+              Include(x => x.UserRole).
+              FirstOrDefault(x => x.Email == model.Email);
+
+            if (user == null)
+            {
+                //ModelState.AddModelError("Email", "Email or Password is wrong!");
+                //return View();
+                return RedirectToRoute("user-register");
+            }
+
+            if (!BCrypt.Net.BCrypt.Verify(model.Password, user.Password))
+            {
+                ModelState.AddModelError("Email", "Email or Password is wrong!");
+                return View();
+            }
+
+
+            var claims = new List<Claim>()
+            {
+                new Claim("Id", user.Id.ToString())
+            };
+
+            //foreach (var userRole in user.UserRole)
+            //{
+
+            //    claims.Add(new Claim(ClaimTypes.Role, userRole.Role.ToString()));
+            //}
+
+
+
+            var claimsIdentity = new ClaimsIdentity(claims, "Cookie");
+            var claimsPricipal = new ClaimsPrincipal(claimsIdentity);
+
+            await HttpContext.SignInAsync("Cookie", claimsPricipal);
+
+            return View("Views/Auth/UserPanel.cshtml");
         }
 
-        [HttpGet]
+        [HttpGet("register", Name ="user-register")]
         public IActionResult Register()
         {
             var offices = _limakDbContext.Officies.ToList();
@@ -130,11 +169,20 @@ namespace Limakaz.Controllers.Client
             return View("Views/Auth/UserPanel.cshtml");
         }
 
-        public async Task<IActionResult> Logout()
+        [HttpPost("log", Name ="logout")]
+        public async Task<IActionResult> Logout(LogoutViewModel model)
         {
-            await HttpContext.SignOutAsync("Cookie");
+            if(model.AcceptLogout == true)
+            {
+              await HttpContext.SignOutAsync("Cookie");
 
-            return View("Views/Home/Index");
+            }
+            else
+            {
+                return View("Views/Auth/UserPanel.cshtml");
+            }
+
+            return View("Views/Home/Index.cshtml");
         }
 
 

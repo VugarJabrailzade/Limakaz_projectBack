@@ -1,4 +1,8 @@
-﻿<header class="customcontainer main-header">
+﻿@{
+    var loginModel = new Limakaz.ViewModels.Auth.LoginViewModel();
+}
+
+<header class="customcontainer main-header">
     <div class=" header-top">
         <div class="top-left">
             <ul>
@@ -159,7 +163,8 @@
                 <a type="button" class="login-tag " data-bs-toggle="modal" data-bs-target="#staticBackdrop">DAXIL OL</a>
             </div>
             <!-- LOG IN MODAL -->
-            @await Component.InvokeAsync("Login")
+            @await  Component.InvokeAsync("Login", loginModel)
+
             <div class="person-icon-mobile">
                 <div>
                     <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">

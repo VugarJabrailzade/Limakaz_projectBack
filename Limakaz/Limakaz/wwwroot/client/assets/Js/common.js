@@ -16,3 +16,19 @@ showPaswordBtn.addEventListener("click", (e)=>{
        }
    }
 })
+
+//Login remember me checkbox
+
+var rememberMe = document.getElementById("__Rem-Me");
+
+rememberMe.addEventListener("click", (e) => {
+    if (rememberMe.checked) {
+        console.log("truee")
+        return rememberMe.value = true;
+    }
+    else {
+        console.log("Falseee")
+        return rememberMe.value = false;
+
+    }
+})

@@ -1,8 +1,10 @@
-﻿@{
+﻿@model LogoutViewModel;
+    @{
     Layout = "_ClientLayout";
 }
 @section custom_plugin_styles {
     <link rel="stylesheet" href="~/client/assets/Styles/scss/userpanel.css">
+    <link rel="stylesheet" href="~/client/assets/Styles/scss/register.css">
 
 }
 
@@ -211,13 +213,13 @@
                                         </a>
                                     </div>
                                     <div class="list-group-item-middle">
-                                        <a href="#" class="aside-nav-tag">
+                                        <a href="#" class="aside-nav-tag" id="user-setting">
                                             <i class="fa-solid fa-gear"></i>
                                             <h3 class="aside-nav-title">Tənzimləmələr</h3>
                                         </a>
                                     </div>
                                     <div class="list-group-item-middle">
-                                        <a href="#" class="aside-nav-tag" type="button" data-bs-toggle="modal"
+                                        <a  class="aside-nav-tag" type="button" data-bs-toggle="modal"
                                            data-bs-target="#logoutModal">
                                             <i class="fa-solid fa-power-off"></i>
                                             <h3 class="aside-nav-title">Hesabdan çıx</h3>
@@ -228,34 +230,31 @@
                                          aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
-                                                <div class=" modal-logout-head">
-                                                    <h1 class="modal-title logout-modal-title fs-5"
-                                                        id="exampleModalLabel">
-                                                        DİQQƏT!
-                                                    </h1>
-                                                    <button type="button" class="btn-close"
-                                                            data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body logout-modal-body">
-                                                    <div class="logout-modal-content">
-                                                        <img src="https://limak.az/new_front/assets/img/SehifeYuklenmedi.png"
-                                                             alt="">
-                                                        <h4 class="logout-content-title">
-                                                            Çıxış etməyə əminsiniz
-                                                            ?
-                                                        </h4>
+                                                <form id="logoutForm" asp-route="logout" method="post">
+                                                    <div class="modal-logout-head">
+                                                        <h1 class="modal-title logout-modal-title fs-5" id="exampleModalLabel">
+                                                            DİQQƏT!
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                </div>
-                                                <div class="modal-footer-logout">
-                                                    <button type="button" class="btn btn-secondary btn-xeyr"
-                                                            data-bs-dismiss="modal">
-                                                        XEYR
-                                                    </button>
-                                                    <button type="button"
-                                                            class="btn btn-primary btn-beli">
-                                                        BƏLİ
-                                                    </button>
-                                                </div>
+                                                    <div class="modal-body logout-modal-body">
+                                                        <div class="logout-modal-content">
+                                                            <img src="https://limak.az/new_front/assets/img/SehifeYuklenmedi.png" alt="">
+                                                            <h4 class="logout-content-title">
+                                                                Çıxış etməyə əminsiniz?
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer-logout">
+                                                        <button type="button" class="btn btn-secondary btn-xeyr" data-bs-dismiss="modal">
+                                                            XEYR
+                                                        </button>
+                                                        <input type="hidden" asp-for="AcceptLogout" value="true">
+                                                        <button type="submit" class="btn btn-primary btn-beli">
+                                                            BƏLİ
+                                                        </button>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -431,3 +430,18 @@
         </a>
     </div>
 </div>
+
+<script>
+    // "loadPage" adlı link'e tıklandığında AJAX isteği gönderme
+    document.getElementById("user-setting").addEventListener("click", function (e) {
+        e.preventDefault();
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/user-setting", true); // İstenilen sayfanın URL'sini belirtin
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.querySelector(".dashboard").innerHTML = xhr.responseText; // Sayfanın içeriğini göster
+            }
+        };
+        xhr.send();
+    });
+</script>

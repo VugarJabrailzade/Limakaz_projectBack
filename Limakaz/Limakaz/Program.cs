@@ -20,6 +20,7 @@ namespace Limakaz
 
         private static void ConfigureServices(WebApplicationBuilder builder)
         {
+            builder.Services.AddAuth();
 
             builder.Services.AddCustomService(builder.Configuration);
             builder.Services.AddMvc();

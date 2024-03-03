@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -648,7 +648,79 @@
       font-weight: 800;
     }
   
+        //SEARCH ICON NAVBAR ANIMATION
+    .search-from {
+        width: 300px;
+        height: 50px;
+        display: flex;
+    }
 
+    .search-input {
+        width: 261px;
+        height: 50px;
+        right: 10px;
+        top: 67px;
+        position: absolute;
+        padding-left: 15px;
+        border: none;
+        background-color: #f5f5f7;
+
+        &:focus {
+            outline: none;
+            background-color: white;
+        }
+    }
+
+    .search-input-icon {
+        position: relative;
+        top: 77px;
+        right: 25px;
+    }
+
+    .search-input-group {
+        position: relative;
+    }
+
+    .search-container {
+        position: absolute;
+        display: none;
+        height: 50px;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .search-link {
+        text-decoration: none;
+        color: black;
+        height: 67px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-icon-head:hover .search-container {
+        display: block;
+        animation: slideUp 0.3s ease;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%); /* Başlangıç pozisyonu: aşağıda */
+        }
+
+        to {
+            transform: translateY(0); /* Bitiş pozisyonu: yukarıda */
+        }
+    }
+
+    .search-head-input {
+        display: none;
+    }
   
   
 
